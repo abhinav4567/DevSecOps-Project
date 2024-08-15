@@ -85,7 +85,7 @@ pipeline {
 
         if (jobStatus == 'SUCCESS' || jobStatus == 'UNSTABLE' || jobStatus == 'FAILURE') {
         emailext (
-        to: 'shillpimishra25090@gmail.com',
+        to: 'abhinavrhce@gmail.com',
         subject: "Jenkins Job '${env.JOB_NAME}' (${env.BUILD_NUMBER}) - ${jobStatus}",
         body: """
         <p>Build Status: ${jobStatus}</p>
